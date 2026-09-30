@@ -30,7 +30,7 @@ const Contact = () => (
       </a>
 
       <a
-        href="https://wa.me/8921198981?text=Hi%20Yadhu%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+        href="https://wa.me/+918921198981?text=Hi%20Yadhu%2C%20I%20found%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
         target="_blank"
         rel="noopener noreferrer"
         className="contact-email"

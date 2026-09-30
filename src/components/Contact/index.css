@@ -151,7 +151,8 @@
   }
 
   .contact-email + .contact-email {
-    margin-left: 0;
+    margin-left: 0px;
+    margin-right: 10px;
     margin-top: 10px;
   }
 
