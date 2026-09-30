@@ -12,14 +12,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
+  metadataBase: new URL(
+    "https://yadhukrishna-personal-portfolio-flax.vercel.app",
+  ),
+
   title: "Yadhu Krishna | Full Stack Developer",
+
   description:
     "Portfolio of Yadhu Krishna, a full-stack developer building modern, responsive and user-focused web applications.",
+
+  alternates: {
+    canonical: "/",
+  },
+
+  verification: {
+    google: "WyKu8AjwqQzjUEIQNJXuw7AlmLDuhlXD-RKlKt185gw",
+  },
 
   openGraph: {
     title: "Yadhu Krishna | Full Stack Developer",
     description:
-      "Portfolio of Yadhu Krishna, a full-stack developer building modern, responsive and user-focused web applications.",
+      "Yadhu Krishna is a full-stack developer building modern, responsive, and user-focused web applications.",
+    url: "/",
+    siteName: "Yadhu Krishna",
     type: "website",
   },
 
@@ -27,7 +42,7 @@ export const metadata = {
     card: "summary",
     title: "Yadhu Krishna | Full Stack Developer",
     description:
-      "Portfolio of Yadhu Krishna, a full-stack developer building modern, responsive and user-focused web applications.",
+      "Yadhu Krishna is a full-stack developer building modern, responsive, and user-focused web applications.",
   },
 };
 

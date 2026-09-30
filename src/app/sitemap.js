@@ -1,7 +1,7 @@
 export default function sitemap() {
   return [
     {
-      url: "https://YOUR-DOMAIN.vercel.app",
+      url: "https://yadhukrishna-personal-portfolio-flax.vercel.app/",
       lastModified: new Date(),
     },
   ];
