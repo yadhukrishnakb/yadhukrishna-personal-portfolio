@@ -8,7 +8,6 @@
 
   display: flex;
   align-items: center;
-  justify-content: space-between;
 
   border-bottom: 1px solid #1f1f1f;
 }
@@ -40,6 +39,8 @@
   display: flex;
   align-items: center;
   gap: 42px;
+  margin-left: auto;
+  margin-right: 38px;
 }
 
 .navbar-links a {
@@ -125,6 +126,7 @@
 
   .navbar-links {
     gap: 25px;
+    margin-right: 22px;
   }
 
   .navbar-links a,
@@ -161,6 +163,7 @@
   .navbar-mobile {
     position: relative;
     display: block;
+    margin-left: auto;
   }
 
   /* Menu button */

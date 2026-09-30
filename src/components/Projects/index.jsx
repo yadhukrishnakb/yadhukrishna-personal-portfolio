@@ -61,7 +61,8 @@ const Projects = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Live Demo ↗
+                Live Demo
+                <span className="project-arrow" aria-hidden="true"></span>
               </a>
 
               <a
@@ -69,7 +70,8 @@ const Projects = () => (
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub ↗
+                GitHub
+                <span className="project-arrow" aria-hidden="true"></span>
               </a>
             </div>
           </div>

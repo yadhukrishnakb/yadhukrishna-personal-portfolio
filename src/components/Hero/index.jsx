@@ -18,11 +18,13 @@ const Hero = () => (
 
       <div className="hero-actions">
         <a href="#work" className="hero-primary">
-          View My Work <span>↗</span>
+          View My Work
+          <span className="hero-arrow" aria-hidden="true"></span>
         </a>
 
         <a href="#contact" className="hero-secondary">
-          Contact Me <span>↗</span>
+          Contact Me
+          <span className="hero-arrow" aria-hidden="true"></span>
         </a>
       </div>
 

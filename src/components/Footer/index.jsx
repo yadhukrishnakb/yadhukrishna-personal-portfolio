@@ -18,7 +18,7 @@ const Footer = () => (
         >
           <FaGithub />
           <span>GitHub</span>
-          <span>↗</span>
+          <span className="footer-arrow" aria-hidden="true"></span>
         </a>
 
         <a
@@ -29,7 +29,7 @@ const Footer = () => (
         >
           <FaLinkedin />
           <span>LinkedIn</span>
-          <span>↗</span>
+          <span className="footer-arrow" aria-hidden="true"></span>
         </a>
 
         <a
@@ -40,7 +40,7 @@ const Footer = () => (
         >
           <FaInstagram />
           <span>Instagram</span>
-          <span>↗</span>
+          <span className="footer-arrow" aria-hidden="true"></span>
         </a>
       </div>
     </div>

@@ -57,66 +57,59 @@
 .hero-actions a {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: 9px;
 
+  padding-bottom: 5px;
+
+  color: #ffffff;
   font-size: 14px;
   text-decoration: none;
 
+  border-bottom: 1px solid #444444;
+
   transition:
     color 0.25s ease,
-    background-color 0.25s ease,
     border-color 0.25s ease,
     transform 0.25s ease;
 }
 
-/* Primary Button */
+/* Primary */
 
-.hero-primary {
-  padding: 14px 20px;
-
-  background: #ffffff;
-  color: #000000;
-
-  border: 1px solid #ffffff;
-}
-
+.hero-primary,
 .hero-primary:visited {
-  color: #000000;
-}
-
-.hero-primary:hover {
-  background: transparent;
   color: #ffffff;
-  transform: translateY(-2px);
 }
 
-/* Secondary Button */
+/* Secondary */
 
-.hero-secondary {
-  padding: 0 0 5px;
-
-  color: #ffffff;
-  border-bottom: 1px solid #444444;
-}
-
+.hero-secondary,
 .hero-secondary:visited {
   color: #ffffff;
 }
 
-.hero-secondary:hover {
+/* Hover */
+
+.hero-actions a:hover {
   color: #ffffff;
   border-color: #ffffff;
   transform: translateY(-2px);
 }
 
-/* Arrow */
+/* External Arrow */
 
-.hero-actions span {
-  font-size: 16px;
+.hero-arrow {
+  width: 7px;
+  height: 7px;
+
+  margin-left: 1px;
+
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+
   transition: transform 0.25s ease;
 }
 
-.hero-actions a:hover span {
+.hero-actions a:hover .hero-arrow {
   transform: translate(2px, -2px);
 }
 
@@ -222,8 +215,9 @@
     width: fit-content;
   }
 
-  .hero-primary {
-    padding: 13px 18px;
+  .hero-arrow {
+    width: 6px;
+    height: 6px;
   }
 
   .hero-scroll {

@@ -23,7 +23,6 @@
 
 .contact-description {
   max-width: 500px;
-
   margin-top: 30px;
 
   color: #888888;
@@ -31,7 +30,7 @@
   line-height: 1.6;
 }
 
-/* Email Button */
+/* Contact Buttons */
 
 .contact-email {
   display: inline-flex;
@@ -59,7 +58,13 @@
   color: #ffffff;
 }
 
-/* Gmail Icon */
+/* Side-by-Side Contact Buttons */
+
+.contact-email + .contact-email {
+  margin-left: 12px;
+}
+
+/* Contact Icon */
 
 .contact-gmail-icon {
   width: 20px;
@@ -74,8 +79,15 @@
 /* Arrow */
 
 .contact-arrow {
+  width: 7px;
+  height: 7px;
+
+  margin-left: 2px;
+
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+
   color: #888888;
-  font-size: 16px;
 
   transition:
     color 0.25s ease,
@@ -88,7 +100,6 @@
   color: #ffffff;
   background-color: #141414;
   border-color: #555555;
-
   transform: translateY(-2px);
 }
 
@@ -106,6 +117,14 @@
 
   .contact-content h2 {
     letter-spacing: -2.5px;
+  }
+
+  .contact-email {
+    margin-top: 32px;
+  }
+
+  .contact-email + .contact-email {
+    margin-left: 8px;
   }
 }
 
@@ -131,8 +150,18 @@
     font-size: 14px;
   }
 
+  .contact-email + .contact-email {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
   .contact-gmail-icon {
     width: 18px;
     height: 18px;
+  }
+
+  .contact-arrow {
+    width: 6px;
+    height: 6px;
   }
 }

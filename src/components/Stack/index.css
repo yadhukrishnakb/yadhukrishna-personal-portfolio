@@ -38,12 +38,19 @@
   border: 1px solid #2a2a2a;
   border-radius: 4px;
 
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+
   transition: background-color 0.25s ease;
 }
 
 .stack-item span {
   color: #888888;
   font-size: 15px;
+
+  user-select: none;
+  -webkit-user-select: none;
 
   transition: color 0.25s ease;
 }
@@ -107,6 +114,7 @@
 .stack-item:hover .github {
   color: #ffffff;
 }
+
 .stack-item:hover .sqlite {
   color: #003b57;
 }

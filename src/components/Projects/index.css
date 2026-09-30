@@ -87,6 +87,7 @@
 .project-description {
   max-width: 550px;
   margin-top: 14px;
+
   color: #888888;
   font-size: 16px;
   line-height: 1.6;
@@ -103,7 +104,9 @@
 
 .project-tech span {
   padding: 7px 12px;
+
   border: 1px solid #2a2a2a;
+
   color: #999999;
   font-size: 12px;
 }
@@ -119,10 +122,15 @@
 
 .project-links a,
 .project-links a:visited {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+
   color: #ffffff;
   text-decoration: none;
   font-size: 14px;
   white-space: nowrap;
+
   padding-bottom: 4px;
   border-bottom: 1px solid #444444;
 
@@ -136,6 +144,22 @@
   color: #ffffff;
   border-color: #ffffff;
   transform: translateY(-1px);
+}
+
+/* Project Arrow */
+
+.project-arrow {
+  width: 7px;
+  height: 7px;
+
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+
+  transition: transform 0.2s ease;
+}
+
+.project-links a:hover .project-arrow {
+  transform: translate(2px, -2px);
 }
 
 /* Tablet */
@@ -189,5 +213,10 @@
 
   .project-links {
     gap: 16px;
+  }
+
+  .project-arrow {
+    width: 6px;
+    height: 6px;
   }
 }
