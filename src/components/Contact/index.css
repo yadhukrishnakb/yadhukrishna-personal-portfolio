@@ -32,12 +32,19 @@
 
 /* Contact Buttons */
 
+.contact-buttons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 40px;
+}
+
 .contact-email {
   display: inline-flex;
   align-items: center;
   gap: 11px;
 
-  margin-top: 40px;
   padding: 13px 18px;
 
   color: #ffffff;
@@ -56,12 +63,6 @@
 
 .contact-email:visited {
   color: #ffffff;
-}
-
-/* Side-by-Side Contact Buttons */
-
-.contact-email + .contact-email {
-  margin-left: 12px;
 }
 
 /* Contact Icon */
@@ -119,12 +120,13 @@
     letter-spacing: -2.5px;
   }
 
-  .contact-email {
+  .contact-buttons {
     margin-top: 32px;
+    gap: 10px;
   }
 
-  .contact-email + .contact-email {
-    margin-left: 8px;
+  .contact-email {
+    margin-top: 0;
   }
 }
 
@@ -144,16 +146,15 @@
     font-size: 15px;
   }
 
-  .contact-email {
+  .contact-buttons {
+    gap: 8px;
     margin-top: 32px;
-    padding: 12px 16px;
-    font-size: 14px;
   }
 
-  .contact-email + .contact-email {
-    margin-left: 0px;
-    margin-right: 10px;
-    margin-top: 10px;
+  .contact-email {
+    margin-top: 0;
+    padding: 12px 16px;
+    font-size: 14px;
   }
 
   .contact-gmail-icon {
