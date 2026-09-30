@@ -11,7 +11,6 @@
 
 .stack-header h2 {
   max-width: 700px;
-
   color: #ffffff;
   font-size: clamp(36px, 5vw, 64px);
   line-height: 1;
@@ -22,26 +21,22 @@
 /* Stack Grid */
 
 .stack-grid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-
-  border-top: 1px solid #2a2a2a;
-  border-left: 1px solid #2a2a2a;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
 }
 
 /* Stack Item */
 
 .stack-item {
-  min-height: 140px;
-  padding: 25px;
+  padding: 17px 20px;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: flex-start;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
 
-  border-right: 1px solid #2a2a2a;
-  border-bottom: 1px solid #2a2a2a;
+  border: 1px solid #2a2a2a;
+  border-radius: 4px;
 
   transition: background-color 0.25s ease;
 }
@@ -56,9 +51,8 @@
 /* Technology Icon */
 
 .stack-icon {
-  font-size: 28px;
+  font-size: 24px;
   color: #666666;
-
   flex-shrink: 0;
 
   transition:
@@ -77,8 +71,44 @@
 }
 
 .stack-item:hover .stack-icon {
-  color: #ffffff;
   transform: translateY(-2px);
+}
+
+/* Brand Colors */
+
+.stack-item:hover .javascript {
+  color: #f7df1e;
+}
+
+.stack-item:hover .react {
+  color: #61dafb;
+}
+
+.stack-item:hover .nextjs {
+  color: #ffffff;
+}
+
+.stack-item:hover .nodejs {
+  color: #339933;
+}
+
+.stack-item:hover .express {
+  color: #ffffff;
+}
+
+.stack-item:hover .mongodb {
+  color: #47a248;
+}
+
+.stack-item:hover .git {
+  color: #f05032;
+}
+
+.stack-item:hover .github {
+  color: #ffffff;
+}
+.stack-item:hover .sqlite {
+  color: #003b57;
 }
 
 /* Tablet */
@@ -93,11 +123,11 @@
   }
 
   .stack-grid {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 
   .stack-item {
-    min-height: 120px;
+    padding: 15px 18px;
   }
 }
 
@@ -114,15 +144,14 @@
   }
 
   .stack-grid {
-    grid-template-columns: 1fr;
+    gap: 8px;
   }
 
   .stack-item {
-    min-height: 100px;
-    padding: 22px;
+    padding: 14px 16px;
   }
 
   .stack-icon {
-    font-size: 26px;
+    font-size: 22px;
   }
 }

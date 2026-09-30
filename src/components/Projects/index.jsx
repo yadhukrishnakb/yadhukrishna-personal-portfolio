@@ -14,7 +14,6 @@ const projects = [
       "PDFParse",
       "Multer",
     ],
-    image: "/projects/project-image-01.png",
     liveUrl: "https://ai-resume-ats-analyzer-seven.vercel.app/",
     githubUrl: "https://github.com/yadhukrishnakb/ai-resume-ats-analyzer",
   },
@@ -24,7 +23,6 @@ const projects = [
     description:
       "A web platform for discovering and exploring local businesses in one place.",
     technologies: ["React.js", "Node.js", "Express.js", "MongoDB"],
-    image: "/projects/project-image-02.png",
     liveUrl: "https://business-directory-dqpj.vercel.app/",
     githubUrl: "https://github.com/yadhukrishnakb/business-directory",
   },
@@ -34,16 +32,12 @@ const Projects = () => (
   <section className="projects" id="work">
     <div className="projects-header">
       <p className="section-label">SELECTED WORK</p>
-      <h2>A collection of things I've built.</h2>
+      <h2>A collection of things I&apos;ve built.</h2>
     </div>
 
     <div className="projects-list">
       {projects.map((project) => (
         <article className="project-card" key={project.number}>
-          <div className="project-image">
-            <img src={project.image} alt={project.title} />
-          </div>
-
           <div className="project-info">
             <div>
               <p className="project-number">

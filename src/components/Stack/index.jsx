@@ -7,6 +7,7 @@ import {
   SiMongodb,
   SiGit,
   SiGithub,
+  SiSqlite,
 } from "react-icons/si";
 import "./index.css";
 
@@ -14,42 +15,47 @@ const technologies = [
   {
     name: "JavaScript",
     icon: SiJavascript,
-    color: "#F7DF1E",
+    className: "javascript",
   },
   {
     name: "React",
     icon: SiReact,
-    color: "#61DAFB",
+    className: "react",
   },
   {
     name: "Next.js",
     icon: SiNextdotjs,
-    color: "#FFFFFF",
+    className: "nextjs",
   },
   {
     name: "Node.js",
     icon: SiNodedotjs,
-    color: "#339933",
+    className: "nodejs",
   },
   {
     name: "Express.js",
     icon: SiExpress,
-    color: "#FFFFFF",
+    className: "express",
   },
   {
     name: "MongoDB",
     icon: SiMongodb,
-    color: "#47A248",
+    className: "mongodb",
   },
   {
     name: "Git",
     icon: SiGit,
-    color: "#F05032",
+    className: "git",
   },
   {
     name: "GitHub",
     icon: SiGithub,
-    color: "#FFFFFF",
+    className: "github",
+  },
+  {
+    name: "SQLite",
+    icon: SiSqlite,
+    className: "sqlite",
   },
 ];
 
@@ -67,7 +73,7 @@ const Stack = () => (
 
         return (
           <div className="stack-item" key={technology.name}>
-            <Icon className="stack-icon"  />
+            <Icon className={`stack-icon ${technology.className}`} />
             <span>{technology.name}</span>
           </div>
         );
