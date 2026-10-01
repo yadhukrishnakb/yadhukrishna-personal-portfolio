@@ -1,4 +1,5 @@
 import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
+import { FiArrowUpRight } from "react-icons/fi";
 
 import "./index.css";
 
@@ -18,7 +19,7 @@ const Footer = () => (
         >
           <FaGithub />
           <span>GitHub</span>
-          <span className="footer-arrow" aria-hidden="true"></span>
+          <FiArrowUpRight className="footer-arrow" aria-hidden="true" />
         </a>
 
         <a
@@ -29,7 +30,7 @@ const Footer = () => (
         >
           <FaLinkedin />
           <span>LinkedIn</span>
-          <span className="footer-arrow" aria-hidden="true"></span>
+          <FiArrowUpRight className="footer-arrow" aria-hidden="true" />
         </a>
 
         <a
@@ -40,7 +41,7 @@ const Footer = () => (
         >
           <FaInstagram />
           <span>Instagram</span>
-          <span className="footer-arrow" aria-hidden="true"></span>
+          <FiArrowUpRight className="footer-arrow" aria-hidden="true" />
         </a>
       </div>
     </div>

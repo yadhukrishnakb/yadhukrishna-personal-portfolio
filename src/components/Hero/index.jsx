@@ -1,3 +1,4 @@
+import { FiArrowUpRight } from "react-icons/fi";
 import "./index.css";
 
 const Hero = () => (
@@ -19,12 +20,12 @@ const Hero = () => (
       <div className="hero-actions">
         <a href="#work" className="hero-primary">
           View My Work
-          <span className="hero-arrow" aria-hidden="true"></span>
+          <FiArrowUpRight className="hero-arrow" aria-hidden="true" />
         </a>
 
         <a href="#contact" className="hero-secondary">
           Contact Me
-          <span className="hero-arrow" aria-hidden="true"></span>
+          <FiArrowUpRight className="hero-arrow" aria-hidden="true" />
         </a>
       </div>
 

@@ -1,5 +1,6 @@
 .contact {
   padding: 140px 6%;
+
   border-top: 1px solid #3a3a3a;
 }
 
@@ -13,9 +14,9 @@
   margin-top: 20px;
 
   color: #ffffff;
-  font-size: clamp(48px, 7vw, 96px);
+  font-size: clamp(44px, 5.5vw, 76px);
   line-height: 0.95;
-  letter-spacing: -4px;
+  letter-spacing: -3px;
   font-weight: 600;
 }
 
@@ -37,6 +38,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 12px;
+
   margin-top: 40px;
 }
 
@@ -73,22 +75,15 @@
 
   display: block;
   flex-shrink: 0;
-
   object-fit: contain;
 }
 
-/* Arrow */
+/* React Arrow Icon */
 
 .contact-arrow {
-  width: 7px;
-  height: 7px;
-
-  margin-left: 2px;
-
-  border-top: 1px solid currentColor;
-  border-right: 1px solid currentColor;
-
+  font-size: 16px;
   color: #888888;
+  flex-shrink: 0;
 
   transition:
     color 0.25s ease,
@@ -101,6 +96,7 @@
   color: #ffffff;
   background-color: #141414;
   border-color: #555555;
+
   transform: translateY(-2px);
 }
 
@@ -163,7 +159,6 @@
   }
 
   .contact-arrow {
-    width: 6px;
-    height: 6px;
+    font-size: 15px;
   }
 }

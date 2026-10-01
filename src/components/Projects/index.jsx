@@ -1,3 +1,4 @@
+import { FiArrowUpRight } from "react-icons/fi";
 import "./index.css";
 
 const projects = [
@@ -62,7 +63,7 @@ const Projects = () => (
                 rel="noopener noreferrer"
               >
                 Live Demo
-                <span className="project-arrow" aria-hidden="true"></span>
+                <FiArrowUpRight className="project-arrow" aria-hidden="true" />
               </a>
 
               <a
@@ -71,7 +72,7 @@ const Projects = () => (
                 rel="noopener noreferrer"
               >
                 GitHub
-                <span className="project-arrow" aria-hidden="true"></span>
+                <FiArrowUpRight className="project-arrow" aria-hidden="true" />
               </a>
             </div>
           </div>

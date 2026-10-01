@@ -1,3 +1,4 @@
+import { FiArrowUpRight } from "react-icons/fi";
 import "./index.css";
 
 const Contact = () => (
@@ -27,7 +28,7 @@ const Contact = () => (
 
           <span>Send an Email</span>
 
-          <span className="contact-arrow" aria-hidden="true"></span>
+          <FiArrowUpRight className="contact-arrow" aria-hidden="true" />
         </a>
 
         <a
@@ -44,7 +45,7 @@ const Contact = () => (
 
           <span>Chat on WhatsApp</span>
 
-          <span className="contact-arrow" aria-hidden="true"></span>
+          <FiArrowUpRight className="contact-arrow" aria-hidden="true" />
         </a>
       </div>
     </div>
