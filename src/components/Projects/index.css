@@ -96,6 +96,9 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 24px;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .project-tech span {
