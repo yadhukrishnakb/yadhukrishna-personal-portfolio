@@ -15,7 +15,7 @@ const Contact = () => (
 
       <div className="contact-buttons">
         <a
-          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${process.env.EMAIl}`}
+          href={`https://mail.google.com/mail/?view=cm&fs=1&to=${process.env.EMAIL}`}
           target="_blank"
           rel="noopener noreferrer"
           className="contact-email"
